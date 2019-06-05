@@ -2,7 +2,7 @@ console.log("読み込みおけ")
 //Service Workerの確認
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/js/sw.js')
+    navigator.serviceWorker.register('/sw.js')
         .then((reg) => {
           console.log('Service worker 登録されたよ', reg);
         });
